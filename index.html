@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" type="text/css" media="screen and (max-width: 568px)" href="mbviewss.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 600px) " href="eventstyle.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+</head>
+<body>
+
+<div class="split left">
+  
+</div>
+<div class="split right">
+    
+  <div class="device">
+    <div class="container">
+     
+        <div id="burger" class="open-main-nav">
+			<div class="bar1"></div>
+           <div class="bar2"></div>
+            <div class="bar3"></div>
+            <span class="burger-text">Menu</span>
+      </div>
+            <div class="center">
+              <div class="pt-table desktop-768">
+                 <div class="pt-tablecell page-home relative" style="background-position: center;background-size: cover;">
+                    <div class="overlay">
+                      <div class="container">
+                         <div class="row">
+                            <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                              <nav class="main-nav" id="main-nav">
+                                <div class="hexagon-menu clear">
+                                   <ul style="list-style-type:none;">
+                                     <div class="hexagon-item">
+                                     <div class="hex-item">
+                                     <div></div>
+                                     <div></div>
+                                     <div></div>
+                                      </div>
+                                     <div class="hex-item">
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      </div>
+                    <a href="#"  class="hex-content">
+                        <span class="hex-content-inner">
+                            
+                                <li>        <span class="icon">
+                                <i class="fa fa-universal-access"></i>
+                            </span>
+                            
+                               
+                            <span class="title">ABOUT</span></li>
+                        </span>
+                        
+                    </a>
+                   
+                </div>
+                <div class="hexagon-item">
+                    <div class="hex-item">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="hex-item">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <a href="#"  class="hex-content">
+                        <span class="hex-content-inner">
+                            <li>  <span class="icon">
+                                <i class="fa fa-bullseye"></i>
+                            </span>
+                            <span class="title">EVENTS</span></li>
+                        </span>
+                        
+                    </a>
+                </div>
+                <div class="hexagon-item">
+                    <div class="hex-item">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="hex-item">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <a href="#"  class="hex-content">
+                        <span class="hex-content-inner">
+                         <li> <span class="icon">
+                                <i class="fas fa-paper-plane"></i>
+                            </span>
+                            <span class="title">CONTACT</span></li>  
+                        </span>
+                        
+                    </a>    
+                </div>
+                
+                <div class="hexagon-item">
+                    <div class="hex-item">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="hex-item">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <a href="#"  class="hex-content">
+                        <span class="hex-content-inner">
+                            <li>    <span class="icon">
+                              <i class="fa fa-question-circle" ></i>
+                            </span>
+                            <span class="title">FAQ</span></li> 
+                        </span>
+                    </a>    
+                </div>
+            </ul>
+        </div>
+    </nav>
+</div>  
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+ <script>
+     
+     
+        let burger = document.getElementById('burger'),
+	 nav    = document.getElementById('main-nav')
+
+
+burger.addEventListener('click', function(e){
+	this.classList.toggle('change');
+	nav.classList.toggle('is-open');
+});
+
+
+
+/* Onload demo - dirty timeout */
+let clickEvent = new Event('click');
+
+window.addEventListener('load', function(e) {
+	
+	burger.dispatchEvent(clickEvent);
+	
+	setTimeout(function(){
+		burger.dispatchEvent(clickEvent);
+		
+		
+	}, 5500);
+});
+     
+ </script> 
+</body>
+
+</html> 
