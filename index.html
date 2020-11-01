@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="viewport" content="width=device-width">
-	<link rel='stylesheet' media='screen and (max-width: 700px)' href='mbviewss.css' />
-<link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 900px)' href='mbviewss.css' />
-<link rel='stylesheet' media='screen and (min-width: 901px)' href='eventstyle.css' />
+    <head>
+        <meta name="viewport" content="width=device-width">
+       
+    <link rel='stylesheet' media='screen and (min-width: 901px)' href='ss2.css' />
+       <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+            
+        
+       <meta name="viewport" content="width=device-width">
+       <link rel='stylesheet' media='screen and (max-width: 700px)' href='mbviewss.css' />
+    <link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 900px)' href='mbviewss.css' />
+    <link rel='stylesheet' media='screen and (min-width: 901px)' href='eventstyle.css' />
+       <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+            
     
     
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-</head>
+    </head>
 <body>
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <div class="split left">
   
 </div>
@@ -54,7 +63,7 @@
                             </span>
                             
                                
-                            <span class="title">ABOUT</span></li>
+                            <span class="title">TECHNICAL EVENTS</span></li>
                         </span>
                         
                     </a>
@@ -76,7 +85,7 @@
                             <li>  <span class="icon">
                                 <i class="fa fa-bullseye"></i>
                             </span>
-                            <span class="title">EVENTS</span></li>
+                            <span class="title">NON-TECHNICAL EVENTS</span></li>
                         </span>
                         
                     </a>
@@ -135,17 +144,30 @@
 </div>
 </div>
 </div>
+<div>
+
+    <a href="#ok" class="scroll-down" address="true"></a>
 </div>
- <script>
+    <div id="ok">
+    <p id="a">OK SCROLL !</p>
+    </div>
+    
+        
+</div>
+
+
+<script>
      
+    
+    
      
-        let burger = document.getElementById('burger'),
-	 nav    = document.getElementById('main-nav')
+    let burger = document.getElementById('burger'),
+ nav    = document.getElementById('main-nav')
 
 
 burger.addEventListener('click', function(e){
-	this.classList.toggle('change');
-	nav.classList.toggle('is-open');
+this.classList.toggle('change');
+nav.classList.toggle('is-open');
 });
 
 
@@ -154,17 +176,18 @@ burger.addEventListener('click', function(e){
 let clickEvent = new Event('click');
 
 window.addEventListener('load', function(e) {
-	
-	burger.dispatchEvent(clickEvent);
-	
-	setTimeout(function(){
-		burger.dispatchEvent(clickEvent);
-		
-		
-	}, 5500);
+
+burger.dispatchEvent(clickEvent);
+
+setTimeout(function(){
+    burger.dispatchEvent(clickEvent);
+    
+    
+}, 5500);
 });
-     
- </script> 
+</script>
+
 </body>
 
 </html> 
+
