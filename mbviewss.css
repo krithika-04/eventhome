@@ -151,8 +151,6 @@
 	position: fixed; 
 	top: 0; 
 	left: 0; 
-  
-	/* Preserve aspet ratio */
 	min-width: 100%;
 	min-height: 100%;
 	box-shadow: 0 0 0 10px #40E0D0;
