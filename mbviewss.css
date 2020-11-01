@@ -146,12 +146,15 @@
 }
 
 .device {
-	position: relative;
-	width: 345px;
-	height: 600px;
 	background:#40E0D0;
 	border: none;
-	border-radius: 3px;
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+  
+	/* Preserve aspet ratio */
+	min-width: 100%;
+	min-height: 100%;
 	box-shadow: 0 0 0 10px #40E0D0;
 }
 
